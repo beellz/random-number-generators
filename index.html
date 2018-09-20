@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head
 	<title>random number generator</title>
+    
+    <script type="text/javascript">
+
+		function generateRandomNumber(){
+			var rand = Math.floor(Math.random() * 10);
+			document.getElementById('display').innerText = rand;
+	
+		} 
+	</script>
+
+
+
+<script type="text/javascript">
+	
+	function minmax() {
+
+		var rand = Math.random();
+		document.getElementById('min').innerText = rand;
+	}
+
+</script>
+
+<!--
+<script type="text/javascript">
+	
+ function random() {
+
+ 	var rand = Math.random();
+ 	document.getElementById('upplay').innerText = rand;
+
+
+ 	var min = parseInt(document.getElementById('min').value);
+	var max = parseInt(document.getElementById('max').value);
+ }
+
+
+
+		
+		function generateRandomNumber(){
+			var min = parseInt(document.getElementById('min').value);
+			var max = parseInt(document.getElementById('max').value);
+			var rand = Math.floor(Math.random() * (max - min + 1)) + min;
+			document.getElementById('display').innerText = rand;
+		}
+
+		
+
+
+
+</script>
+-->
+
+
 </head>
 <body>
 
-<p> this is a start of a website where you can make various number generators </p>
+	<button onclick="generateRandomNumber();">Generate</button>
+	 <div id="display" style="font-size:60px; "></div>
 
-<p>this need more work</p>
+
+	<button onclick="minmax();">random float </button>
+	<div id="min" style="font-size:60px; "></div>
+		
+
 
 
 </body>
 </html>
+
+<!---
+
+-->			

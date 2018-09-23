@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>random number generator</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="main.css"> 
+    
+    <script type="text/javascript">
+    	
+
+		function generateRandomNumber(){
+			var min = parseInt(document.getElementById('min').value);
+			var max = parseInt(document.getElementById('max').value);
+			var rand = Math.floor(Math.random() * (max - min + 1)) + min;
+			document.getElementById('display').innerText = rand;
+		}	
+
+    </script>
+
+
+</head>
+
+<body>
+	
+	<header class="hero">
+	<p class="logo">The place of random</p>
+   </header>
+
+<nav class="nav-bar products">
+
+	<a href="index.html">Home</a>
+	<a href="about.html">about us</a>
+	<a href="products.html">products</a>
+
+	<div id="products" >
+ <main id="main-container #main">
+ <label>Min</label>
+ <input id="min" type="text"><br>
+ <label>Max</label>
+ <input id="max" type="text"><br>
+ <button onclick="generateRandomNumber();">Generate</button>
+ <div id="display" style="font-size:60px;"></div>
+</main>
+
+</body>
+<!--
+<footer class="footer">
+	<p class="footer-p">
+		posted by Beellz
+	</p>
+	<p class="footer-p">
+		contact information : belal20795@gmail.com
+	</p>
+</footer>
+
+
+</html>
